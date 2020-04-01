@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/kecamatan/tambah','KecamatanController@tambah');
+
 
  
 
