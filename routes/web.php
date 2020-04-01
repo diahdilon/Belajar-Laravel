@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/index', 'Web\ProdukWebController@index');
+Route::get('/kecamatan/tambah','KecamatanController@tambah');
+
+ 
+
+
