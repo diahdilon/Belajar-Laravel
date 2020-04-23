@@ -11,12 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+    //return view('index');
+//});
+//Route::get('/about', function () {
+       // return view('about');
+//});
 
-Route::get('/kecamatan/tambah','KecamatanController@tambah');
-
- 
+ routes::get('/', 'PagesController@home');
+ routes::get('/about', 'PagesController@about');
 
 
