@@ -11,14 +11,14 @@
 |
 */
 
-//Route::get('/', function () {
-    //return view('index');
-//});
-//Route::get('/about', function () {
-       // return view('about');
-//});
+Route::get('/', function () {
+    return view('index');
+});
+Route::get('/about', function () {
+        return view('about');
+});
 
- routes::get('/', 'PagesController@home');
- routes::get('/about', 'PagesController@about');
+ //routes::get('/', 'PagesController@home');
+ //routes::get('/about', 'PagesController@about');
 
 
