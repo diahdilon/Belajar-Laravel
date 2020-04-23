@@ -1,6 +1,7 @@
-@extends (layout/main);
-
-@section('title', 'web analisis tanah longsor');
+@extends('main')
+    @foreach ($hotel as $hotel)
+    @foreach ($city as $city)
+    @section('title'," $hotel->hotel - $city->city")
 
 @sextion('container');
 
