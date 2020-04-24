@@ -22,7 +22,7 @@
         <div class="navbar-nav">
         <a class="nav-item nav-link active" href="/">Home </a>
         <a class="nav-item nav-link" href="/about">about</a>
-        <a class="nav-item nav-link" href="/tanah longsor">tanah longsor</a>
+        <a class="nav-item nav-link" href="/tanah longsor">data</a>
     </div>
   </div>
   </div>
