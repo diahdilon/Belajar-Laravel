@@ -18,6 +18,7 @@
     </tr>
     </thead>
     <tbody>
+    @foreach($data as $dt )
     <tr>
     <th scope="row">1</th>
     <td>pakuniran</td>
@@ -25,13 +26,14 @@
     <td>12</td>
     <td>2016</td>
     <td>
-    <a href="" class="badge badge-secces ">edit</a>
-    <a href="" class="badge badge-danger ">delete</a>
-    </td>
+        <a href="" class="badge badge-secces ">edit</a>
+        <a href="" class="badge badge-danger ">delete</a>
+        </td>
     </tr>
-    </tbody>
-    </table>
-    </div>
-    </div>
-    <div>
+ @endforeach
+ </tbody>
+ </table>
+</div>
+</div>
+<div>
 @endsection
