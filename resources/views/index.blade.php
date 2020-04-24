@@ -1,6 +1,6 @@
-@extends (layout/main);
+@extends('layout.main');
 @section('title', 'web analisis tanah longsor');
-@sextion('container');
+@section('container');
 
 <div class="container">
 <div class="row">

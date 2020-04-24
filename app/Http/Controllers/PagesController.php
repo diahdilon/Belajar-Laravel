@@ -8,7 +8,7 @@ use App\User;
 class UserController extends Controller
 {
     
-    public function home($id)
+    public function home()
     {
         return view('index');
     }
