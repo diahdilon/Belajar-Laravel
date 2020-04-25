@@ -12,7 +12,7 @@
         <th scope="col">#</th>
         <th scope="col">desa</th>
         <th scope="col">kecamatan</th>
-        <th scope="col">jumlah kejadian</th>
+        <th scope="col">jumlah_kejadian</th>
         <th scope="col">tahun</th>
         <th scope="col">aksi</th>
     </tr>
@@ -20,11 +20,11 @@
     <tbody>
     @foreach($data as $dt )
     <tr>
-    <th scope="row">1</th>
-    <td>pakuniran</td>
-    <td>probolinggo</td>
-    <td>12</td>
-    <td>2016</td>
+    <th scope="row">{{ $loop->iteration }}</th>
+    <td>{{ $dt-> desa }}</td>
+    <td>{{ $dt-> kecamatan }}</td>
+    <td>{{ $dt-> jumlah_kejadian }}</td>
+    <td>{{ $dt-> tahun }}</td>
     <td>
         <a href="" class="badge badge-secces ">edit</a>
         <a href="" class="badge badge-danger ">delete</a>
