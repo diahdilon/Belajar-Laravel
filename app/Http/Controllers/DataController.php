@@ -15,7 +15,7 @@ class DataController extends Controller
     public function index()
     {
         $data = DB::table('data')->get();
-       return view('data.index' ['mahasiswa => $mahasiswa']);
+       return view('data.index' ['mahasiswa =>']);
     }
 
     /**
