@@ -18,7 +18,6 @@
     </tr>
     </thead>
     <tbody>
-    @foreach($data as $dt )
     <tr>
     <th scope="row">1</th>
     <td>pakuniran</td>
@@ -30,10 +29,8 @@
         <a href="" class="badge badge-danger ">delete</a>
         </td>
     </tr>
- @endforeach
  </tbody>
  </table>
 </div>
 </div>
 <div>
-@endsection

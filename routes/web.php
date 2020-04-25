@@ -21,7 +21,7 @@
  route::get('/', 'PagesController@home');
  route::get('/about', 'PagesController@about');
 
- route::get('/data', 'DataController@index');
+ route::get('/data/{data}', 'DataController@show');
 
 
 

@@ -14,8 +14,8 @@ class DataController extends Controller
      */
     public function index()
     {
-        $data = DB::table('data')->get();
-       return view('data.index' ['mahasiswa =>']);
+        //$data = DB::table('data')->get();
+       //return view('data.index' ['mahasiswa =>']);
     }
 
     /**
@@ -45,9 +45,11 @@ class DataController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($data)
     {
-       //
+        $data = \DB::table('data')->where('data', $data)->firs();
+       return view('data.index' ['mahasiswa =>']);
+       dd($data);
     }
 
     /**
