@@ -16,7 +16,7 @@ class DataController extends Controller
     public function index()
     {
         //$data = DB::table('data')->get();
-        $data = Student::all();
+        $data = Longsor::all();
        return view('data.index',['data'=> $data]);
     }
 
