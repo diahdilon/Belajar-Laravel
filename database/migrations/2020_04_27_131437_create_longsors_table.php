@@ -13,7 +13,15 @@ class CreateLongsorsTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('longsors', function(Blueprint $table)){
+            $table->bigIncrements('id');
+            $table->string('desa');
+            $table->char('kecamtan', 10)->unique();
+            $table->string('jumlah_kejadian');
+            $table->string('tahun');
+            $table->timestamps('id');
+
+        });
     }
 
     /**
