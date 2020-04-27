@@ -16,7 +16,7 @@ class CreateLongsorsTable extends Migration
         Schema::create('longsors', function(Blueprint $table){
             $table->bigIncrements('id');
             $table->string('desa');
-            $table->char('kecamatan', 10)->unique();
+            $table->string('kecamatan');
             $table->string('jumlah_kejadian');
             $table->string('tahun');
             $table->timestamps();
