@@ -23,5 +23,8 @@
 
  route::get('/data', 'DataController@index');
 
+ //longsors
+ route::get('/longsors', 'longsorsController@index');
+
 
 

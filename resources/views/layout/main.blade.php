@@ -20,9 +20,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="/">Home </a>
-        <a class="nav-item nav-link" href="/about">about</a>
-        <a class="nav-item nav-link" href="/tanah longsor">data</a>
+        <a class="nav-item nav-link active" href="{{ url('/') }} ">Home </a>
+        <a class="nav-item nav-link" href="{{ url('/about') }} ">about</a>
+        <a class="nav-item nav-link" href="{{ url('/data') }} ">data</a>
+        <a class="nav-item nav-link" href="{{ url('/longsors') }} ">longsors</a>
+
     </div>
   </div>
   </div>
