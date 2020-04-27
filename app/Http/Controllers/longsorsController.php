@@ -14,7 +14,8 @@ class longsorsController extends Controller
      */
     public function index()
     {
-        //
+    $longsors = Longsor::all();
+    return view ('longsors.index', ['longsors' => $longsors]);
     }
 
     /**
@@ -24,7 +25,7 @@ class longsorsController extends Controller
      */
     public function create()
     {
-        //
+    return view('longsors.create');
     }
 
     /**
@@ -35,7 +36,15 @@ class longsorsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $longsor = new longsor;
+        $longsor->desa = $request->desa;
+        $longsor->desa = $request->kecamatan;
+        $longsor->desa = $request->jumlah_kejadian;
+        $longsor->desa = $request->tahun;
+
+        $longsors->save();
+
+        return redirect('/longsors');
     }
 
     /**
@@ -46,7 +55,7 @@ class longsorsController extends Controller
      */
     public function show(longsor $longsor)
     {
-        //
+        return view('longsors.show', compact('longsor'));
     }
 
     /**
