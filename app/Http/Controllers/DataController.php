@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Appp\Student;
 
 class DataController extends Controller
 {
@@ -15,8 +14,7 @@ class DataController extends Controller
      */
     public function index()
     {
-        //$data = DB::table('data')->get();
-        $data = Longsor::all();
+        $data = DB::table('data')->get();
        return view('data.index',['data'=> $data]);
     }
 
