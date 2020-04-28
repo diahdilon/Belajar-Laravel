@@ -38,11 +38,11 @@ class longsorsController extends Controller
     {
         $longsor = new longsor;
         $longsor->desa = $request->desa;
-        $longsor->desa = $request->kecamatan;
-        $longsor->desa = $request->jumlah_kejadian;
-        $longsor->desa = $request->tahun;
+        $longsor->kecamatan = $request->kecamatan;
+        $longsor->jumlah_kejadian = $request->jumlah_kejadian;
+        $longsor->tahun = $request->tahun;
 
-        $longsors->save();
+        $longsor->save();
 
         return redirect('/longsors');
     }
