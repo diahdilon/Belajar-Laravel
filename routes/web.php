@@ -27,7 +27,7 @@
  route::get('/longsors', 'longsorsController@index');
  route::get('/longsors/create', 'longsorsController@create');
  route::get('/longsors/{longsor}', 'longsorsController@show');
- route::post('/longsors', 'longsorsController@store');
+ route::post('/longsors/store', 'longsorsController@store');
 
 
 
