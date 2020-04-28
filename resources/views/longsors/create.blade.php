@@ -1,5 +1,5 @@
 @extends('layout.main');
-@section('title', 'Daftar Data');
+@section('title', 'Tambah Data');
 @section('container');
 <div class="container">
 <div class="row">
