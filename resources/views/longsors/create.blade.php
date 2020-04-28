@@ -6,7 +6,7 @@
 <div class="col-6">
     <h1 class="mt-3">Tambah Data</h1>
     <form method="post" action="/longsors">
-    @CsrftToken
+    @CsrfToken
   <div class="form-group">
     <label for="desa">Desa</label>
     <input type="text" class="form-control" id="desa" placeholder="masukkan desa" desa="desa">
