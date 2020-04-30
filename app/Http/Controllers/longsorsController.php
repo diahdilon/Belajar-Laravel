@@ -89,6 +89,6 @@ class longsorsController extends Controller
      */
     public function destroy(longsor $longsor)
     {
-        //
+        return $longsor;
     }
 }

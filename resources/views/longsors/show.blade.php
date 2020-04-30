@@ -13,7 +13,11 @@
     <p class="card-text">{{ $longsor->tahun}}</p>
 
     <button type="submit" class="btn btn-primary">Edit</button>
+    <form action="{{ $longsor->id }}" method="post" class="d-inline">
+    @method('delete')
+  $csrf
     <button type="submit" class="btn btn-danger">Delete</button>
+    </form>
     <a href="/longsors" class="card-link">kembali</a>
   </div>
 </div>

@@ -22,12 +22,13 @@
  route::get('/about', 'PagesController@about');
 
  route::get('/data', 'DataController@index');
-
+ 
  //longsors
  route::get('/longsors', 'longsorsController@index');
  route::get('/longsors/create', 'longsorsController@create');
  route::get('/longsors/{longsor}', 'longsorsController@show');
  route::post('/longsors', 'longsorsController@store');
+ route::delete('/longsors/{ longsor}', 'longsorsController@destroy');
 
 
 
